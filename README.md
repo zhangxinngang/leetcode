@@ -1,4 +1,4 @@
-# 日常刷力扣
+# Daily leetcode soluting
 
-## 目前已刷 38道 
-## ClassName = ${问题名}+${leetcode_number}
+## already soluted 38 problems with java  
+## ClassName = ${ProblemTitle}+${ProblemNumber}
