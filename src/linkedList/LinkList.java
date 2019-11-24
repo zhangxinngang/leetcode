@@ -4,7 +4,18 @@ package linkedList;
  * created by zhangxingang on 2019/04/18
  */
 public class LinkList {
+    private LinkNode head;
+    private LinkNode tail;
 
+    public LinkList(LinkNode head) {
+        this.head = head;
+        this.tail = head;
+    }
+
+    public void addToTail(LinkNode node){
+        this.tail.next = node;
+        this.tail = node;
+    }
 
     /**
      * @method 在链表头加node
@@ -61,6 +72,17 @@ public class LinkList {
         if (head == null && head.next == null){
             return;
         }
+        LinkNode node = head.next;
+        while (null != node.next) {
+            System.out.print(node.val);
+            node = node.next;
+        }
+        if (node.next == null){
+            System.out.println(node.val);
+        }
+    }
+
+    public void ergodic(){
         LinkNode node = head.next;
         while (null != node.next) {
             System.out.print(node.val);
@@ -131,5 +153,16 @@ public class LinkList {
             }
             node = node.next;
         }
+    }
+
+    public static void main(String[] args) {
+        LinkList linkList = new LinkList(new LinkNode(0));
+        linkList.addToTail(new LinkNode(1));
+        linkList.addToTail(new LinkNode(2));
+        linkList.addToTail(new LinkNode(3));
+        linkList.addToTail(new LinkNode(4));
+        linkList.addToTail(new LinkNode(5));
+
+        linkList.ergodic();
     }
 }
