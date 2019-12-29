@@ -17,13 +17,13 @@ public class ReorderList143 {
             h = h.next;
         }
         secondHalfNode = h;
-        ListNode reverse = reverse(halfNode);
-        ListNode result = new ListNode(0);
-        while(head != null || halfNode != null){
-            if (halfNode != null){
-                head.next = halfNode;
-            }
-        }
+//        ListNode reverse = reverse(halfNode);
+//        ListNode result = new ListNode(0);
+//        while(head != null || halfNode != null){
+//            if (halfNode != null){
+//                head.next = halfNode;
+//            }
+//        }
 
 
     }
