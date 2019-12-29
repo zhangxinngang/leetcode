@@ -1,4 +1,4 @@
-package linkedList;
+package com.custom.zh3ng.algorithms.linkedList;
 
 /*
  * created by zhangxingang on 2019/04/18
