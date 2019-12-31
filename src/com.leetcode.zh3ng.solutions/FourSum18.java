@@ -7,6 +7,16 @@ import java.util.Set;
 
 public class FourSum18 {
 
+    /**
+     * @method
+     * @date 2019-12-31 14:25
+     * @author zhangxingang
+     * @description  一个数组，找四个数，相加之和等于目标值 的所有情况，不重复情况
+     * 比如 【-1，-1，0，2，1】 target 0
+     * 结果，[-1，-1，0，2]一种情况
+     * @param null
+     * @return
+    */
     public List<List<Integer>> fourSum(int[] nums, int target) {
         Set<String> seqSet = new HashSet<>();
         quicksort(nums,0,nums.length-1);
