@@ -14,7 +14,6 @@ public class FourSum18 {
      * @description  一个数组，找四个数，相加之和等于目标值 的所有情况，不重复情况
      * 比如 【-1，-1，0，2，1】 target 0
      * 结果，[-1，-1，0，2]一种情况
-     * @param null
      * @return
     */
     public List<List<Integer>> fourSum(int[] nums, int target) {
