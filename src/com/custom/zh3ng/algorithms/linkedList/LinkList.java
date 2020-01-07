@@ -121,7 +121,6 @@ public class LinkList {
             return ;
         }
         LinkNode p = head.next.next;
-        head.next.next = null;
         while(p != null){
             LinkNode q = p.next;
             p.next = head.next;

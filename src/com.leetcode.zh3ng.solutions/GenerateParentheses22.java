@@ -7,14 +7,11 @@ import java.util.Set;
 
 public class GenerateParentheses22 {
     public List<String> generateParenthesis(int n) {
-        List<String> strSet = gen(n*2-1,new ArrayList<>(),"(",1,0);
-
-        char[] cs = new char[n*2];
-
-        return strSet;
+        Set<String> strSet = gen(n*2-1,new HashSet<>(),"(",1,0);
+        return new ArrayList<>(strSet);
     }
 
-    public List<String> gen(int n,List<String> set,String s,int left,int right){
+    public Set<String> gen(int n,Set<String> set,String s,int left,int right){
         if (right > left){
             return set;
         }
@@ -32,10 +29,9 @@ public class GenerateParentheses22 {
         }
     }
 
-
     public static void main(String[] args) {
         GenerateParentheses22 g = new GenerateParentheses22();
-        List<String> list = g.generateParenthesis(2);
+        List<String> list = g.generateParenthesis(6);
 
         for (String s:list){
             System.out.println(s);
