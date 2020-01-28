@@ -2,12 +2,14 @@ package com.leetcode.zh3ng.solutions;
 
 /*
  * created by zhangxingang on 2020/01/09
+ * todo not soluted
  */
 public class FindFirstAndLastPositionOfElementInSortedArray34 {
     public int[] searchRange(int[] nums, int target) {
         if (nums.length == 0){
             return new int[]{-1,-1};
         }
+
         int start = -1;
         int end = -1;
 
@@ -46,6 +48,8 @@ public class FindFirstAndLastPositionOfElementInSortedArray34 {
                 return mid+1;
             }else if (nums[mid] < target && nums[mid+1] < target){
                 left = mid+1;
+            }else if (nums[mid] < target && nums[mid+1] > target){
+                return -1;
             }
         }
         return -1;
@@ -67,6 +71,8 @@ public class FindFirstAndLastPositionOfElementInSortedArray34 {
                 return mid-1;
             }else if (nums[mid] > target && nums[mid-1] > target){
                 right = mid-1;
+            }else if (nums[mid] > target && nums[mid-1] < target){
+                return -1;
             }
         }
         return -1;
@@ -75,7 +81,13 @@ public class FindFirstAndLastPositionOfElementInSortedArray34 {
     public static void main(String[] args) {
         FindFirstAndLastPositionOfElementInSortedArray34 f = new FindFirstAndLastPositionOfElementInSortedArray34();
 
-        int[] idx = f.searchRange(new int[]{3},3);
+        int[] idx = f.searchRange(new int[]{5,7,7,8,8,10},6);
+
+        System.out.println(idx[0]);
+        System.out.println(idx[1]);
+
+        System.out.println("------");
+        idx = f.searchRange(new int[]{1,4},4);
 
         System.out.println(idx[0]);
         System.out.println(idx[1]);
