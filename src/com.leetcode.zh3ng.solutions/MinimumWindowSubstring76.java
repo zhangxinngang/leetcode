@@ -1,76 +1,65 @@
 package com.leetcode.zh3ng.solutions;
 
-import org.omg.Messaging.SYNC_WITH_TRANSPORT;
-
 import java.util.HashMap;
 import java.util.Map;
 
 public class MinimumWindowSubstring76 {
+
+    //unsolved
     public static String minWindow(String s, String t) {
         if (s.length() < t.length()){
             return "";
         }
+        int head = 0;
+        int tail = 0;
 
-        int first = 0;
-        int second = 1;
-        String result = s;
-        while(first < second && second <= s.length()){
-            String sub = s.substring(first,second);
-            System.out.println(sub+" first:"+first+"secode"+second);
-            if (containAll(sub,t)){
-                if (sub.length() < result.length()){
-                    result = sub;
+        String result = "";
+        Map<Character,Integer> tMap = genMap(t);
+        Map<Character,Integer> sMap = new HashMap<>();
+        int keyLenth = tMap.size();
+        while(tail <= s.length()){
+            if (keyLenth == 0){
+                String subString = s.substring(head,tail);
+                if (result.length() == 0){
+                    result = subString;
                 }
-                first++;
+                result = result.length() > subString.length()?subString:result;
+
+                int count = sMap.get(s.charAt(head));
+                sMap.put(s.charAt(head),count-1);
+                if (tMap.containsKey(s.charAt(head))&&sMap.containsKey(s.charAt(head))&&sMap.get(s.charAt(head)) < tMap.get(s.charAt(head))){
+                    keyLenth++;
+                }
+                head = head + 1;
             }else{
-                if (second == s.length()&&first == 0){
-                    result = "";
+                if (tail == s.length()){
+                    break;
                 }
-                second++;
+                int count = sMap.getOrDefault(s.charAt(tail),0);
+                sMap.put(s.charAt(tail),count+1);
+                if (sMap.get(s.charAt(tail)) != null && sMap.get(s.charAt(tail)) == tMap.get(s.charAt(tail))){
+                    keyLenth--;
+                }
+                tail = tail + 1;
             }
         }
         return result;
     }
 
-    public static boolean containAll(String s,String t){
-        if (s.length() < t.length()){
-            return false;
-        }
-        System.out.println("s:"+s+" t:"+t);
-        Map<Character,Integer> tMap = new HashMap<>();
-        Map<Character,Integer> sMap = new HashMap<>();
+    public static Map<Character,Integer> genMap(String s){
+        Map<Character,Integer> map = new HashMap<>();
         for (Character c:s.toCharArray()){
-            if(sMap.containsKey(c)){
-                sMap.put(c,sMap.get(c)+1);
+            if (map.containsKey(c)){
+                map.put(c,map.get(c)+1);
             }else{
-                sMap.put(c,1);
+                map.put(c,1);
             }
         }
-        for(Character c:t.toCharArray()){
-            if(tMap.containsKey(c)){
-                tMap.put(c,tMap.get(c)+1);
-            }else{
-                tMap.put(c,1);
-            }
-        }
-
-        for(Character c:tMap.keySet()){
-            int tc = tMap.get(c);
-            System.out.println("t:"+tc+"s"+sMap.get(c)+""+c);
-            if (sMap.containsKey(c)&&sMap.get(c)<tc){
-                System.out.print(false);
-                return false;
-            }else if(!sMap.containsKey(c)){
-                System.out.print(false);
-                return false;
-            }
-
-        }
-        return true;
+        return map;
     }
 
     public static void main(String[] args) {
-        System.out.println(minWindow("bbaa","baa"));
+
     }
 
 }
