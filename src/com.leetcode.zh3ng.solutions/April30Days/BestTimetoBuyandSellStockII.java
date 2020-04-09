@@ -1,4 +1,4 @@
-package com.leetcode.zh3ng.solutions;
+package com.leetcode.zh3ng.solutions.April30Days;
 
 /*
  * created by zhangxingang on 2020/04/05

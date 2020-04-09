@@ -1,4 +1,4 @@
-package com.leetcode.zh3ng.solutions;
+package com.leetcode.zh3ng.solutions.April30Days;
 
 import java.util.Stack;
 
@@ -57,6 +57,8 @@ public class BackspaceStringCompare {
             }
         }
 
+        System.out.println(sStack.toString());
+        System.out.println(tStack.toString());
         if (sStack.size() != tStack.size()){
             return false;
         }else{

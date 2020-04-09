@@ -1,6 +1,5 @@
-package com.leetcode.zh3ng.solutions;
+package com.leetcode.zh3ng.solutions.April30Days;
 
-import java.util.HashMap;
 import java.util.HashSet;
 
 /*
