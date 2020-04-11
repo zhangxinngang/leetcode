@@ -4,9 +4,13 @@ package model;
 * created by zhangxingang on 2019/01/21
 */
 public class TreeNode {
-    private int val;
-    private TreeNode left;
-    private TreeNode right;
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
+
+    public TreeNode(int val) {
+        this.val = val;
+    }
 
     public int getVal() {
         return val;
