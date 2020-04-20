@@ -30,25 +30,25 @@ public class ConstructBinarySearchTreefromPreorderTraversal {
     public TreeNode bstFromPreorder(int[] preorder) {
         TreeNode root = new TreeNode(preorder[0]);
         for (int i = 1;i<preorder.length;i++){
-            addTree(root,preorder,i);
+            addTree(root,preorder[i]);
         }
         return root;
     }
 
-    public void addTree(TreeNode now, int[] preorder, int index){
-        if (now.val > preorder[index]){
+    public void addTree(TreeNode now, int v){
+        if (now.val > v){
             if (now.left == null){
-                now.left = new TreeNode(preorder[index]);
+                now.left = new TreeNode(v);
                 return;
             }else{
-                addTree(now.left,preorder,index);
+                addTree(now.left,v);
             }
         }
-        if (now.val < preorder[index]){
+        if (now.val < v){
             if (now.right == null){
-                now.right = new TreeNode(preorder[index]);
+                now.right = new TreeNode(v);
             }else{
-                addTree(now.right,preorder,index);
+                addTree(now.right,v);
             }
         }
     }
