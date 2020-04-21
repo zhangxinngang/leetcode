@@ -19,8 +19,11 @@ import model.TreeNode;
  * Input: [8,5,1,7,10,12]
  * Output: [8,5,10,1,7,null,12]
  *
- *
- *
+ *            8
+ *          /  \
+ *         5   10
+ *        / \    \
+ *       1  7    12
  * Note:
  *
  * 1 <= preorder.length <= 100
