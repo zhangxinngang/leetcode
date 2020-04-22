@@ -20,7 +20,7 @@ public class SubarraySumEqualsK {
     /**
      * @date 2020-04-22 15:36
      * @author zhangxingang
-     * @description   Time O(n^2)   Space O(n)
+     * @description   Time O(n^2)  Space O(n)
      * @return
     */
     public int subarraySum(int[] nums, int k) {
