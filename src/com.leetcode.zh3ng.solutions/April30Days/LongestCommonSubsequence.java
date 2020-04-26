@@ -32,7 +32,6 @@ import java.util.Map;
  * Output: 0
  * Explanation: There is no such common subsequence, so the result is 0.
  *
- *
  * Constraints:
  *
  * 1 <= text1.length <= 1000
