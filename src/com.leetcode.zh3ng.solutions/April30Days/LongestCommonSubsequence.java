@@ -78,7 +78,7 @@ public class LongestCommonSubsequence {
         "jmjkbkjkv")+" 1");
 
         System.out.println(l.longestCommonSubsequence("oxcpqrsvwf",
-        "shmtulqrypy")+" 3");
+        "shmtulqrypy")+" 2");
 
         System.out.println(l.longestCommonSubsequence("pmjghexybyrgzczy",
         "hafcdqbgncrcbihkd")+" 4");
