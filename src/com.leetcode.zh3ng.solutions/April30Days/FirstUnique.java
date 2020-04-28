@@ -72,6 +72,18 @@ import java.util.*;
  * 1 <= nums[i] <= 10^8
  * 1 <= value <= 10^8
  * At most 50000 calls will be made to showFirstUnique and add.
+ *
+ *
+ *
+ *
+ * 思路，采用map + 双链表
+ * 1 双链表记录 按顺序的 唯一数值。
+ * 2.map 用于记录数值及唯一数值在双链表中的引用。
+ *
+ * 判断：如果新加入的value在map中存在，说明不是唯一值，则要通过map找到在双链表中的引用，如果没有删除则从链表中删除，如果删除了不处理
+ *
+ * 查询第一个唯一值为双链表的第一个。
+ *
  */
 public class FirstUnique {
     Map<Integer,Node> map = new HashMap<>();
