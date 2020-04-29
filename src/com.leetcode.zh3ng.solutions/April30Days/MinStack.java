@@ -2,9 +2,6 @@ package com.leetcode.zh3ng.solutions.April30Days;
 
 import java.util.Stack;
 
-/*
- * created by zhangxingang on 2020/04/10
- */
 public class MinStack {
     private Stack<Integer> stack;
     private Stack<Integer> minStack;
@@ -49,7 +46,7 @@ public class MinStack {
         System.out.println(minStack.top());
         System.out.println(minStack.getMin());
 
-        
+
 
     }
 }
