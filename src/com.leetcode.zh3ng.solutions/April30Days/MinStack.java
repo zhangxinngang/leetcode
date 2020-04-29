@@ -48,6 +48,7 @@ public class MinStack {
 
         minStack.pop();
 
+
         System.out.println(minStack.top());
         System.out.println(minStack.getMin());
 
