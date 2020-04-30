@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * created by zhangxingang on 2020/04/13
- *
+ * @author zhangxingang
+ * @created on 2020/04/30
  *
  * Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1.
  *

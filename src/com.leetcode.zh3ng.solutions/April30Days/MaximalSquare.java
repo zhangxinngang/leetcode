@@ -1,8 +1,8 @@
 package com.leetcode.zh3ng.solutions.April30Days;
 
 /**
- * created by zhangxingang on 2020/04/27
- *
+ * @author zhangxingang
+ * @created on 2020/04/30
  * Given a 2D binary matrix filled with 0's and 1's,
  * find the largest square containing only 1's and return its area.
  *

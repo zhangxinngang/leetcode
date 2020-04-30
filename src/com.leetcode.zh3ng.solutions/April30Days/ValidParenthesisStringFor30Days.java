@@ -3,8 +3,8 @@ package com.leetcode.zh3ng.solutions.April30Days;
 import java.util.Stack;
 
 /**
- * created by zhangxingang on 2020/04/16
- *
+ * @author zhangxingang
+ * @created on 2020/04/30
  * Given a string containing only three types of characters: '(', ')' and '*', write a function to check whether this string is valid. We define the validity of a string by these rules:
  *
  * Any left parenthesis '(' must have a corresponding right parenthesis ')'.

@@ -1,7 +1,8 @@
 package com.leetcode.zh3ng.solutions.April30Days;
 
-/*
- * created by zhangxingang on 2020/04/05
+/**
+ * @author zhangxingang
+ * @created on 2020/04/30
  */
 public class BestTimetoBuyandSellStockII {
     public int maxProfit(int[] prices) {

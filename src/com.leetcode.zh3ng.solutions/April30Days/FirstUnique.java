@@ -3,8 +3,8 @@ package com.leetcode.zh3ng.solutions.April30Days;
 import java.util.*;
 
 /**
- * created by zhangxingang on 2020/04/28
- *
+ * @author zhangxingang
+ * @created on 2020/04/30
  * You have a queue of integers, you need to retrieve the first unique integer in the queue.
  *
  * Implement the FirstUnique class:

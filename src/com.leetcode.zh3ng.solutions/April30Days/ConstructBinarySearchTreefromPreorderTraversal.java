@@ -3,8 +3,8 @@ package com.leetcode.zh3ng.solutions.April30Days;
 import model.TreeNode;
 
 /**
- * created by zhangxingang on 2020/04/20
- *
+ * @author zhangxingang
+ * @created on 2020/04/30
  * Return the root node of a binary search tree that matches the given preorder traversal.
  *
  * (Recall that a binary search tree is a binary tree where for every node, any descendant of node.left has a value < node.val,

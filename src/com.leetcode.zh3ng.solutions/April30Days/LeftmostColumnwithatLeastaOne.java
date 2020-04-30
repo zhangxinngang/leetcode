@@ -6,8 +6,8 @@ import model.BinaryMatrixImpl;
 import java.util.List;
 
 /**
- * created by zhangxingang on 2020/04/21
- *
+ * @author zhangxingang
+ * @created on 2020/04/30
  * (This problem is an interactive problem.)
  *
  * A binary matrix means that all elements are 0 or 1. For each individual row of the matrix, this row is sorted in non-decreasing order.

@@ -1,5 +1,9 @@
 package com.leetcode.zh3ng.solutions.April30Days;
 
+/**
+ * @author zhangxingang
+ * @created on 2020/04/30
+ */
 public class MinimumPathSum {
     int min = Integer.MAX_VALUE;
     /**

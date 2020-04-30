@@ -3,7 +3,8 @@ package com.leetcode.zh3ng.solutions.April30Days;
 import model.TreeNode;
 
 /**
- * created by zhangxingang on 2020/04/30
+ * @author zhangxingang
+ * @created on 2020/04/30
  */
 public class CheckIfaStringIsaValidSequencefromRoottoLeavesPathinaBinaryTree {
     public boolean isValidSequence(TreeNode root, int[] arr) {

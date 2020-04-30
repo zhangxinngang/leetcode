@@ -3,8 +3,8 @@ package com.leetcode.zh3ng.solutions.April30Days;
 import model.TreeNode;
 
 /**
- * created by zhangxingang on 2020/04/29
- *
+ * @author zhangxingang
+ * @created on 2020/04/30
  * Given a non-empty binary tree, find the maximum path sum.
  *
  * For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections.

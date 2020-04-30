@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * created by zhangxingang on 2020/04/22
- *
+ * @author zhangxingang
+ * @created on 2020/04/30
  * Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k.
  *
  * Example 1:

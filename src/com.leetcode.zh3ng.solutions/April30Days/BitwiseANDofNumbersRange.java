@@ -1,7 +1,8 @@
 package com.leetcode.zh3ng.solutions.April30Days;
 
 /**
- * created by zhangxingang on 2020/04/23
+ * @author zhangxingang
+ * @created on 2020/04/30
  *
  * Given a range [m, n] where 0 <= m <= n <= 2147483647,
  * return the bitwise AND of all numbers in this range,
