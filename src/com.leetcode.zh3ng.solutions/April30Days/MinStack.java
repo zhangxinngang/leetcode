@@ -6,7 +6,8 @@ public class MinStack {
     private Stack<Integer> stack;
     private Stack<Integer> minStack;
 
-    /** initialize your data structure here. */
+    /** initialize your data structure here.
+     */
     public MinStack() {
         stack = new Stack<>();
         minStack = new Stack<>();
@@ -46,7 +47,7 @@ public class MinStack {
         System.out.println(minStack.top());
         System.out.println(minStack.getMin());
 
-
+        System.out.println("快去看看吧>>".length());
 
     }
 }
