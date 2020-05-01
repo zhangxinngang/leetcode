@@ -1,8 +1,10 @@
 package com.leetcode.zh3ng.solutions.April30Days;
 
-/*
- * created by zhangxingang on 2020/04/14
+/**
+ * @author zhangxingang
+ * @created on 2020/04/14
  */
+
 public class PerformStringShifts30Days {
     public String solution(String s, int[][] shift){
         //最终转换次数

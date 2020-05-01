@@ -3,9 +3,11 @@ package com.leetcode.zh3ng.solutions.April30Days;
 import java.util.HashSet;
 import java.util.Set;
 
-/*
- * created by zhangxingang on 2020/04/02
+/**
+ * @author zhangxingang
+ * @created on 2020/04/30
  */
+
 public class HappyNumber {
     /**
      * Write an algorithm to determine if a number is "happy".

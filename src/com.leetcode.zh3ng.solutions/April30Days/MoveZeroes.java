@@ -1,8 +1,10 @@
 package com.leetcode.zh3ng.solutions.April30Days;
 
-/*
- * created by zhangxingang on 2020/04/04
+/**
+ * @author zhangxingang
+ * @created on 2020/04/30
  */
+
 public class MoveZeroes {
     public void moveZeroes(int[] nums) {
         for (int i = 0;i<nums.length;i++){

@@ -3,7 +3,8 @@ package com.leetcode.zh3ng.solutions.April30Days;
 import java.util.Stack;
 
 /**
- * created by zhangxingang on 2020/04/09
+ * @author zhangxingang
+ * @created on 2020/04/30
  *
  * Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.
  *

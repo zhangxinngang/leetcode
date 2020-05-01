@@ -3,8 +3,8 @@ package com.leetcode.zh3ng.solutions.April30Days;
 import model.ListNode;
 
 /**
- * created by zhangxingang on 2020/04/08
- *
+ * @author zhangxingang
+ * @created on 2020/04/30
  * Question:
  *
  * Given a non-empty, singly linked list with head node head, return a middle node of linked list.

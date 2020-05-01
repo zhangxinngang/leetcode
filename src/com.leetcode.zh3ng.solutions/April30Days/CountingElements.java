@@ -2,9 +2,9 @@ package com.leetcode.zh3ng.solutions.April30Days;
 
 import java.util.HashSet;
 
-/*
- * created by zhangxingang on 2020/04/07
- *
+/**
+ * @author zhangxingang
+ * @created on 2020/04/30
  * Given an integer array arr, count element x such that x + 1 is also in arr.
 
 If there're duplicates in arr, count them seperately.

@@ -3,8 +3,8 @@ package com.leetcode.zh3ng.solutions.April30Days;
 import model.TreeNode;
 
 /**
- * created by zhangxingang on 2020/04/11
- *
+ * @author zhangxingang
+ * @created on 2020/04/30
  *
  * 点到点最长路径   思路：根的最长路径就是  左结点的最长路径 + 右结点的最长路径 + 2  每个根的最长路径找最大的结点
  *
