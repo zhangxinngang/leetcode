@@ -1,4 +1,4 @@
-package com.leetcode.zh3ng.solutions.Arrays101;
+package com.leetcode.zh3ng.solutions.arrays101;
 
 /**
  * @author zhangxingang
@@ -41,6 +41,7 @@ public class FindNumberswithEvenNumberofDigits {
         }
         return count;
     }
+
 
     public static void main(String[] args) {
         FindNumberswithEvenNumberofDigits f = new FindNumberswithEvenNumberofDigits();
