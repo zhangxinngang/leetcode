@@ -1,6 +1,5 @@
 package com.leetcode.zh3ng.solutions.arrays101;
 
-
 /**
  * @author zhangxingang
  * @created on 2020-05-12
