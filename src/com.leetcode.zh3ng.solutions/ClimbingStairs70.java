@@ -1,7 +1,7 @@
 package com.leetcode.zh3ng.solutions;
 
-/*
- * created by zhangxingang on 2020/02/01
+/**
+ * @author  zhangxingang on 2020/02/01
  */
 public class ClimbingStairs70 {
 

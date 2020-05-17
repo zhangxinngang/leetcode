@@ -1,6 +1,4 @@
-package com.leetcode.zh3ng.solutions.Arrays101;
-
-import java.util.Arrays;
+package com.leetcode.zh3ng.solutions.arrays101;
 
 /**
  * @author zhangxingang

@@ -24,6 +24,7 @@ import java.util.Stack;
  * Note:
  * The string size will be in the range [1, 100].
  */
+
 public class ValidParenthesisStringFor30Days {
     public boolean checkValidString(String s) {
 
