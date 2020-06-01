@@ -1,8 +1,9 @@
 package model;
 
-/*
-* created by zhangxingang on 2019/01/21
-*/
+/**
+ * @author zhangxingang
+ * @created on 2019/01/21
+ */
 public class TreeNode {
     public int val;
     public TreeNode left;
@@ -10,6 +11,12 @@ public class TreeNode {
 
     public TreeNode(int val) {
         this.val = val;
+    }
+
+    public TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 
     public int getVal() {
