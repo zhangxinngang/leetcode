@@ -41,6 +41,8 @@ import java.util.*;
  * 1.首先将成本分成两拨，一拨去A成本低，一拨去B成本低
  * 2.找到数量多的那一拨，从中去除一部分n, 分给少的那拨
  * 3.分出的部分n为 去A和去B成本相差 最少的n个人
+ *
+ * 时间复杂度 NlogN
  */
 public class TwoCityScheduling {
     private int min = Integer.MAX_VALUE;
