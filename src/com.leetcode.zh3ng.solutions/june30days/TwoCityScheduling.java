@@ -32,10 +32,62 @@ import java.util.*;
  * 1 <= costs.length <= 100
  * It is guaranteed that costs.length is even.
  * 1 <= costs[i][0], costs[i][1] <= 1000
+ *
+ *
+ *
+ *
+ * 解题思路：
+ *
+ * 1.首先将成本分成两拨，一拨去A成本低，一拨去B成本低
+ * 2.找到数量多的那一拨，从中去除一部分n, 分给少的那拨
+ * 3.分出的部分n为 去A和去B成本相差 最少的n个人
  */
 public class TwoCityScheduling {
     private int min = Integer.MAX_VALUE;
     public int twoCitySchedCost(int[][] costs) {
+        List<int[]> costA = new ArrayList<>();
+        List<int[]> costB = new ArrayList<>();
+
+        for (int[] cost:costs){
+            if (cost[0] > cost[1]){
+                costB.add(cost);
+            }else{
+                costA.add(cost);
+            }
+        }
+
+        List<int[]> big = costB;
+        List<int[]> small = costA;
+        boolean big1 = true;
+
+        if (costA.size() > costB.size()){
+            big = costA;
+            small = costB;
+            big1 = false;
+        }
+        Collections.sort(big, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return Math.abs(o1[0]-o1[1]) - Math.abs(o2[0]-o2[1]);
+            }
+        });
+
+        int d = (big.size() - small.size())/2;
+        small.addAll(big.subList(0,d));
+        big = big.subList(d,big.size());
+
+        int total = 0;
+        for (int i = 0;i<big.size();i++){
+            if (big1){
+                total += (big.get(i)[1]+small.get(i)[0]);
+            }else{
+                total += (big.get(i)[0]+small.get(i)[1]);
+            }
+        }
+        return total;
+    }
+
+    public int twoCitySchedCostDfs(int[][] costs){
         dfs(costs,0,0,1,0,0);
         dfs(costs,0,1,0,1,0);
         return min;
@@ -46,7 +98,7 @@ public class TwoCityScheduling {
             return;
         }
         total += costs[index][cityId];
-        if (total > min){
+        if (total > min || cityA > costs.length || cityB > costs.length){
             return;
         }
         if (cityA == cityB && (cityA+cityB)==costs.length){
@@ -62,21 +114,22 @@ public class TwoCityScheduling {
     public static void main(String[] args) {
         TwoCityScheduling twoCityScheduling = new TwoCityScheduling();
 
-//        int[][] costs = new int[][]{
-//                new int[]{10,20},
-//                new int[]{30,200},
-//                new int[]{400,50},
-//                new int[]{30,20}
-//        };
-
         int[][] costs = new int[][]{
-                new int[]{259,770},
-                new int[]{448,54},
-                new int[]{926,667},
-                new int[]{184,139},
-                new int[]{840,118},
-                new int[]{577,469}
+                new int[]{10,20},
+                new int[]{30,200},
+                new int[]{400,50},
+                new int[]{30,20}
         };
+
+        //1859
+//        int[][] costs = new int[][]{
+//                new int[]{259,770},
+//                new int[]{448,54},
+//                new int[]{926,667},
+//                new int[]{184,139},
+//                new int[]{840,118},
+//                new int[]{577,469}
+//        };
 
         System.out.println(twoCityScheduling.twoCitySchedCost(costs));
     }
