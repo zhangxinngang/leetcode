@@ -27,6 +27,16 @@ import java.util.Arrays;
  *
  * Input: [1,3,5,6], 0
  * Output: 0
+ *
+ * 解题思路：
+ *
+ * 运用二分查找，
+ *
+ * *** 如果最后一个比target小，则位置为nums.length
+ * *** 如果能找到，就用返回位置；
+ * *** 如果找不到，二分查找的low 即为该放入的位置。
+ *
+ *
  */
 public class SearchInsertPosition {
     public int searchInsert(int[] nums, int target) {
