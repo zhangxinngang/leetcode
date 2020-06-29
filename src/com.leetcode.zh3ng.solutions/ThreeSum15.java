@@ -1,14 +1,13 @@
 package com.leetcode.zh3ng.solutions;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
+/**
+ * @author zhangxingang
+ */
 public class ThreeSum15 {
     public static List<List<Integer>> threeSum(int[] nums){
-        sort(nums,0,nums.length-1);
-        System.out.println(nums[0]+","+nums[nums.length-1]);
+        Arrays.sort(nums);
         Set<List<Integer>> result = new HashSet<>();
         for (int i = 0;i<nums.length;i++){
             int key = nums[i];
