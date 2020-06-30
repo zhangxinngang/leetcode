@@ -13,13 +13,15 @@ import java.util.Set;
  *
  * 二叉树的左视图
  *
- *           0
- *         /  \
- *        1    2
- *       / \   / \
- *      3  4  5  6
- *           /
- *          7
+ *   ->        0
+ *           /  \
+ *   ->     1    2
+ *         / \   / \
+ *   ->   3  4  5  6
+ *             /
+ *   ->       7
+ *
+ *   结果 0，1，3，7
  */
 public class BinarytreeLeftSideView {
     Set<Integer> layerSet = new HashSet<>();
