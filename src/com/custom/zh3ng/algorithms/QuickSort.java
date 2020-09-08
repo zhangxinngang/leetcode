@@ -1,23 +1,16 @@
 package com.custom.zh3ng.algorithms;
 
-/*
- * created by zhangxingang on 2019/11/22
+/**
+ * @author zhangxingang
+ * @created on 2019/11/22
  */
 public class QuickSort {
     public void sort(int[] a,int low,int high) {
         int start = low;
         int end = high;
-        int key = a[start];
+        int key = a[end];
 
-        while(start < end){
-            while (start < end && key <= a[end]){
-                end--;
-            }
-            if (key > a[end]){
-                int temp = a[end];
-                a[end] = a[start];
-                a[start] = temp;
-            }
+        while (start < end){
             while (start < end && key >= a[start]){
                 start++;
             }
@@ -26,13 +19,21 @@ public class QuickSort {
                 a[start] = a[end];
                 a[end] = temp;
             }
-        }
 
-        if (low < start){
-            sort(a,low,start-1);
+            while (start < end && key <= a[end]){
+                end--;
+            }
+            if (key > a[end]){
+                int temp = a[start];
+                a[start] = a[end];
+                a[end] = temp;
+            }
         }
-        if (high > end){
-            sort(a,end+1,high);
+        if (start > low){
+            sort(a, low, start-1);
+        }
+        if (end < high){
+            sort(a, end+1, high);
         }
     }
 
