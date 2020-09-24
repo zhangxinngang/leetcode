@@ -1,4 +1,4 @@
-package com.leetcode.zh3ng.solutions;
+package com.leetcode.zh3ng.solutions.yuanfudao;
 
 import java.util.Stack;
 
