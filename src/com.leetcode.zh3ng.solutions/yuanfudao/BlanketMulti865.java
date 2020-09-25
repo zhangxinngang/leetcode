@@ -6,7 +6,7 @@ import java.util.Stack;
  * @author zhangxingang
  * @created on 2020-09-24
  */
-public class BlanketMulti {
+public class BlanketMulti865 {
     public int blanketMulti(String s){
         Stack<Integer> stack = new Stack();
         stack.push(0);
@@ -26,7 +26,7 @@ public class BlanketMulti {
     }
 
     public static void main(String[] args) {
-        BlanketMulti blanketMulti = new BlanketMulti();
+        BlanketMulti865 blanketMulti = new BlanketMulti865();
 
         System.out.println(blanketMulti.blanketMulti("(()(()))"));
 
