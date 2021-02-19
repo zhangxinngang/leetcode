@@ -1,4 +1,4 @@
-package model;
+package leetcode.editor.cn.solution148;
 
 /**
  * @author zhangxingang
