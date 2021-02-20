@@ -30,9 +30,6 @@ package leetcode.editor.cn.solution31;
 // Related Topics 数组 
 // 👍 936 👎 0
 
-
-import cucumber.api.java.en_pirate.Aye;
-
 import java.util.Arrays;
 
 //leetcode submit region begin(Prohibit modification and deletion)
